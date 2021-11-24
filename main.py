@@ -37,12 +37,14 @@ class CyrcleVashka(QMainWindow):
         col = QColor(0, 0, 0)
         col.setNamedColor('#yellow')
         qp.setPen(col)
-        qp.setBrush(QColor("yellow"))
-        a = randint(70, 160)
+        qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
+        a = randint(70, 250)
         qp.drawEllipse(randint(0, 500), randint(0, 500), a, a)
-        a = randint(70, 160)
+        qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
+        a = randint(70, 250)
         qp.drawEllipse(randint(0, 500), randint(0, 500), a, a)
-        a = randint(70, 160)
+        qp.setBrush(QColor(randint(0, 255), randint(0, 255), randint(0, 255)))
+        a = randint(70, 250)
         qp.drawEllipse(randint(0, 500), randint(0, 500), a, a)
 
 
